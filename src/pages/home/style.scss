@@ -1,0 +1,154 @@
+.home {
+    height: 80vh;
+    background: url(../../../public/inages/home.jpeg);
+    padding: 10rem;
+
+    .info {
+        color: black;
+        width: 40rem;
+
+        h1 {
+            letter-spacing: 0.1rem;
+            margin: 0 0 1rem 0;
+        }
+
+        span {
+            font-size: x-large;
+        }
+
+        button {
+            border-radius: 10px;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            font-size: 2rem;
+            font-size: larger;
+            background-color: transparent;
+            border: 3px solid white;
+            color: black !important;
+            transition: all ease-in-out 0.2s;
+            background-color: black !important;
+
+            a {
+                text-decoration: none;
+            }
+        }
+
+        button:hover {
+            background-color: black !important;
+            border: 3px solid white;
+            color: #3F0071;
+        }
+    }
+}
+
+.facility {
+    background-color: #ff7300;
+
+    .heading {
+        font-size: xx-large;
+        font-weight: 900;
+    }
+
+    .card {
+        background-color: #3E6D9C;
+        color: white;
+
+        h5 {
+            font-weight: bolder;
+        }
+    }
+}
+
+.RC-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    #RC-coupon {
+        border-radius: 25px 0 0 25px;
+        border: solid black 1px;
+        width: 20rem;
+    }
+    .coupon {
+        border-radius: 25px 0 0 25px;
+        border: solid black 1px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        h3 {
+            position: relative;
+            margin: 0;
+            padding: 0.4rem 1.5rem;
+            border-radius: 25px 0 0 25px;
+            display: inline;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            width: 16.5rem;
+            background-color: #f62d00;
+            color: wheat;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            top: 1.8rem;
+            left: 1rem;
+            height: 20px;
+            width: 20px;
+            border-radius: 25px;
+            border: solid black 3px;
+        }
+    }
+    button {
+        border-radius: 10px;
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+        font-size: 2rem;
+        font-size: larger;
+        background-color: transparent;
+        border: 3px solid white;
+        color: white !important;
+        transition: all ease-in-out 0.2s;
+        background-color: black !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .home {
+        padding: 10rem 0 0 1rem;
+
+        .info {
+            width: 98%;
+
+            h1 {
+                font-size: xx-large;
+            }
+
+            span {
+                font-size: 1rem;
+            }
+        }
+
+        button {
+            padding: 0.2rem 0.5rem;
+        }
+    }
+
+    .facility {
+        padding: 0 !important;
+
+        .heading {
+            padding-top: 3rem;
+        }
+
+        .row {
+            margin: 16px 0 !important;
+            padding-bottom: 2rem;
+
+            .card {
+                // width: ;
+            }
+        }
+    }
+    
+}
